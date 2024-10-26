@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "Zpix";
+    src: url("https://raw.githubusercontent.com/angelkawaiix/NSO-web-theme/main/resources/zpix.woff2");
+}
+
+* {
+  --purple: #4d21cb;
+  --winhead: #efcfef;
+  --winbody: #fef0ff;
+  --cyan: #90f3e1;
+  font-family: 'Zpix' !important;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Basic Styling */
+body {
+  margin: 0;
+  padding: 0;
+  background-color:var(--winbody);
+}
+
+header {
+  background-color: white;
+  color: #fff;
+  padding: 1rem 0;
+  margin: 1rem;
+}
+
+/* Navigation Container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Search Bar */
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: 1px solid #fff;
+}
+
+.search-bar button {
+  background-color: #fff;
+  color: #222;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+img.logo {
+    content: url(https://github.com/angelkawaiix/NSO-web-theme/blob/main/resources/liveico.png?raw=true) !important;
+    width: 100px;
+    object-fit: contain;
+}
+
+/* ... your existing CSS ... */
+
+/* Comment Section Styling */
+#comments {
+  margin: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#comment-list {
+  margin-bottom: 15px;
+}
+
+#new-comment textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical;
+}
+
+#new-comment button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
