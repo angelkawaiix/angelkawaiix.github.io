@@ -133,3 +133,34 @@ closeWindowButton.addEventListener('click', function() {
   draggableBox.style.msUserSelect = 'auto';
   draggableBox.draggable = false;
 });
+
+// Get all windowbox elements
+const windowboxes = document.querySelectorAll('.windowbox');
+
+// Initialize z-index counter
+let zIndexCounter = 1;
+
+// Function to bring a windowbox to the front
+function bringToFront(windowbox) {
+  // Get current z-index
+  const currentZIndex = parseInt(windowbox.style.zIndex) || 0;
+
+  // Update z-index counter if necessary
+  if (currentZIndex >= zIndexCounter) {
+    zIndexCounter = currentZIndex + 1;
+  }
+
+  // Set new z-index
+  windowbox.style.zIndex = zIndexCounter;
+}
+
+// Add event listener to each windowbox
+windowboxes.forEach(windowbox => {
+  windowbox.addEventListener('click', () => {
+    bringToFront(windowbox);
+  });
+
+  windowbox.addEventListener('mousedown', () => {
+    bringToFront(windowbox);
+  });
+});
