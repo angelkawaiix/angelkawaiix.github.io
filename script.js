@@ -4,19 +4,19 @@ const rightSidebar = document.querySelector('.right-sidebar');
 
 // Function to update the background image based on time
 function updateSidebarBackground() {
-    const now = new Date();
-    const hour = now.getHours();
+	const now = new Date();
+	const hour = now.getHours();
 
-    if (hour >= 6 && hour < 15) {
-        leftSidebar.style.backgroundImage = 'url("images/side_bars/bg_side_bar_noon2.png")';
-        rightSidebar.style.backgroundImage = 'url("images/side_bars/bg_side_bar_noon2.png")';
-    } else if (hour >= 15 && hour < 20) {
-        leftSidebar.style.backgroundImage = 'url("images/side_bars/bg_side_bar_evening2.png")';
-        rightSidebar.style.backgroundImage = 'url("images/side_bars/bg_side_bar_evening2.png")';
-    } else { // 8pm - 6am
-        leftSidebar.style.backgroundImage = 'url("images/side_bars/bg_side_bar_night2.png")';
-        rightSidebar.style.backgroundImage = 'url("images/side_bars/bg_side_bar_night2.png")';
-    }
+	if (hour >= 6 && hour < 15) {
+		leftSidebar.style.backgroundImage = 'url("images/side_bars/bg_side_bar_noon2.png")';
+		rightSidebar.style.backgroundImage = 'url("images/side_bars/bg_side_bar_noon2.png")';
+	} else if (hour >= 15 && hour < 20) {
+		leftSidebar.style.backgroundImage = 'url("images/side_bars/bg_side_bar_evening2.png")';
+		rightSidebar.style.backgroundImage = 'url("images/side_bars/bg_side_bar_evening2.png")';
+	} else { // 8pm - 6am
+		leftSidebar.style.backgroundImage = 'url("images/side_bars/bg_side_bar_night2.png")';
+		rightSidebar.style.backgroundImage = 'url("images/side_bars/bg_side_bar_night2.png")';
+	}
 }
 
 // Call the update function initially
@@ -30,36 +30,36 @@ const draggableElements = document.querySelectorAll('.draggable');
 
 // Loop through each element and add the event listeners
 draggableElements.forEach((element) => {
-  // Variables to store the offset values
-  let offsetX, offsetY;
+	// Variables to store the offset values
+	let offsetX, offsetY;
 
-  // Mouse down event to start dragging
-  element.addEventListener('mousedown', function(e) {
-    offsetX = e.clientX - element.getBoundingClientRect().left;
-    offsetY = e.clientY - element.getBoundingClientRect().top;
+	// Mouse down event to start dragging
+	element.addEventListener('mousedown', function (e) {
+		offsetX = e.clientX - element.getBoundingClientRect().left;
+		offsetY = e.clientY - element.getBoundingClientRect().top;
 
-    // Add mousemove and mouseup event listeners
-    document.addEventListener('mousemove', mouseMove);
-    document.addEventListener('mouseup', mouseUp);
-  });
+		// Add mousemove and mouseup event listeners
+		document.addEventListener('mousemove', mouseMove);
+		document.addEventListener('mouseup', mouseUp);
+	});
 });
 
 // Function to handle the mouse move event
 function mouseMove(e) {
-  // Get the element that is being dragged
-  const draggedElement = document.querySelector('.draggable:hover');
+	// Get the element that is being dragged
+	const draggedElement = document.querySelector('.draggable:hover');
 
-  // Make sure the box is positioned absolutely
-  draggedElement.style.position = 'absolute';
-  draggedElement.style.left = (e.clientX) + 'px';
-  draggedElement.style.top = (e.clientY) + 'px';
+	// Make sure the box is positioned absolutely
+	draggedElement.style.position = 'absolute';
+	draggedElement.style.left = (e.clientX) + 'px';
+	draggedElement.style.top = (e.clientY) + 'px';
 }
 
 // Function to handle mouse up event
 function mouseUp() {
-  // Remove mousemove and mouseup event listeners
-  document.removeEventListener('mousemove', mouseMove);
-  document.removeEventListener('mouseup', mouseUp);
+	// Remove mousemove and mouseup event listeners
+	document.removeEventListener('mousemove', mouseMove);
+	document.removeEventListener('mouseup', mouseUp);
 }
 
 // Create an audio element
@@ -69,20 +69,20 @@ var audio = new Audio('sounds/poko.ogg');
 audio.volume = 0.5;
 
 // Add an event listener to the document for mouse clicks
-document.addEventListener('click', function() {
-  // Play the sound effect
-  audio.play();
-  // Reset the audio to play again immediately
-  audio.currentTime = 0;
+document.addEventListener('click', function () {
+	// Play the sound effect
+	audio.play();
+	// Reset the audio to play again immediately
+	audio.currentTime = 0;
 });
 
 // Create an audio element
 var closeSound = new Audio('sounds/window_close.ogg');
 
 // Add an event listener to the closewindow button
-document.querySelector('.closewindow').addEventListener('click', function() {
-  // Play the sound effect
-  closeSound.play();
+document.querySelector('.closewindow').addEventListener('click', function () {
+	// Play the sound effect
+	closeSound.play();
 });
 
 
@@ -91,15 +91,16 @@ const sparklesImages = [];
 
 // Load all images from the sparkles folder
 for (let i = 1; i <= 9; i++) {
-  sparklesImages.push(`images/sparkles/internet_sparkle_00${i}.png`);
+	sparklesImages.push(`images/sparkles/internet_sparkle_00${i}.png`);
 }
 
 // Set up the animation
 let currentImageIndex = 0;
+
 function animateSparkles() {
-  const currentImage = sparklesImages[currentImageIndex];
-  sparklesContainer.querySelector('.sparkles').src = currentImage;
-  currentImageIndex = (currentImageIndex + 1) % sparklesImages.length;
+	const currentImage = sparklesImages[currentImageIndex];
+	sparklesContainer.querySelector('.sparkles').src = currentImage;
+	currentImageIndex = (currentImageIndex + 1) % sparklesImages.length;
 }
 setInterval(animateSparkles, 100); // adjust the interval to control the animation speed
 
@@ -109,14 +110,15 @@ const sparklesImages2 = [];
 
 // Load all images from the sparkles folder
 for (let i = 1; i <= 9; i++) {
-  sparklesImages2.push(`images/sparkles/internet_sparkle_00${i}.png`);
+	sparklesImages2.push(`images/sparkles/internet_sparkle_00${i}.png`);
 }
 
 // Set up the animation
 let currentImageIndex2 = 0;
+
 function animateSparkles2() {
-  const currentImage2 = sparklesImages2[currentImageIndex2];
-  sparklesContainer2.querySelector('.sparkles2').src = currentImage2;
-  currentImageIndex2 = (currentImageIndex2 + 1) % sparklesImages2.length;
+	const currentImage2 = sparklesImages2[currentImageIndex2];
+	sparklesContainer2.querySelector('.sparkles2').src = currentImage2;
+	currentImageIndex2 = (currentImageIndex2 + 1) % sparklesImages2.length;
 }
 setInterval(animateSparkles2, 100); // adjust the interval to control the animation speed
