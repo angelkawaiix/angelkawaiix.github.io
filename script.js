@@ -122,3 +122,14 @@ function animateSparkles2() {
 	currentImageIndex2 = (currentImageIndex2 + 1) % sparklesImages2.length;
 }
 setInterval(animateSparkles2, 100); // adjust the interval to control the animation speed
+
+const closeWindowButton = document.querySelector('.closewindow');
+
+closeWindowButton.addEventListener('click', function() {
+  const draggableBox = document.querySelector('.draggableBox');
+  draggableBox.style.cursor = 'auto';
+  draggableBox.style.userSelect = 'auto';
+  draggableBox.style.webkitUserSelect = 'auto';
+  draggableBox.style.msUserSelect = 'auto';
+  draggableBox.draggable = false;
+});

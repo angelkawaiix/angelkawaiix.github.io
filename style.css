@@ -5,6 +5,7 @@
 	--red: #e75353;
 	--cyan: #90f4e3;
 	--button: #f7e1fa;
+  --medtext: #e992c6;
 }
 
 @font-face {
@@ -53,6 +54,36 @@ html {
 	.button {
 		width: 50% !important;
 	}
+
+  .depaztab, .dylsemtab, .embiantab, .magicgrasstab, .magicpapertab {
+    width: 50% !important;
+    height: 20% !important;
+}
+
+.depazbody {
+  height: 6.2rem !important;
+  width: 12rem !important;
+  overflow: hidden !important;
+}
+
+.depazimg {
+  width: 2.3rem !important;
+  margin: 0 !important;
+}
+
+span.medtitle {
+  font-size: 0.4rem !important;
+}
+
+.depazdesc {
+  font-size: 0.6rem !important;
+  line-height: 0.5rem !important;
+}
+
+.depazmainbodyforpadding {
+  padding: 5px !important;
+}
+
 }
 
 
@@ -286,7 +317,7 @@ span.sleepicontext,
 	/* Add a fixed width */
 }
 
-button.internet {
+button.desktopicon {
 	background: transparent;
 	border: none;
 	cursor: pointer;
@@ -431,4 +462,56 @@ a.internetredirect {
 	/* Adjust the vertical position */
 	z-index: 1;
 	/* Make sure the image is on top of the line */
+}
+
+.depaztab, .dylsemtab, .embiantab, .magicgrasstab, .magicpapertab {
+  width: 700px;
+}
+
+.depazbody {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+}
+
+.depazdesc {
+  color: var(--purple);
+  line-height: 2rem;
+  display: flex;
+  margin-left: 1rem;
+  flex-direction: column;
+}
+
+span.medtitle {
+  font-size: 0.9rem;
+  color: var(--medtext);
+}
+
+.depazmainbodyforpadding
+{
+  padding:10px;
+}
+
+.depazimg {
+  margin: 20px;
+}
+
+.depaztab{
+  left: 33%;
+  top:65%;
+}
+
+.embiantab{
+  left: 68%;
+  top:35%;
+}
+
+.magicgrasstab{
+  left: 45%;
+  top:75%;
+}
+.magicpapertab{
+  left: 65%;
+  top:65%;
 }

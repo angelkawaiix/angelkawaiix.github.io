@@ -30,6 +30,7 @@
 						<button class="button" onclick="document.querySelector('.warningbox').remove()">OK</button>
 					</div>
 				</div>
+      </div>
 				<div class="appicons">
 					<div class="streamicon">
 						<img src="images\desktop_icons\icon_desktop_youtube_0.png" class="streamimage">
@@ -43,11 +44,11 @@
 						<img src="images\desktop_icons\icon_desktop_neru.png" class="sleepimage">
 						<span class="sleepicontext">Sleep</span>
 					</div>
-					<div class="medicon">
-						<img src="images\desktop_icons\icon_desktop_okusuri.png" class="medimage">
+          <button class="medicon desktopicon" onclick="Array.from(document.querySelectorAll('.depaztab, .dylsemtab, .embiantab, .magicgrasstab, .magicpapertab')).forEach(tab => tab.style.display = 'block');">						
+            <img src="images\desktop_icons\icon_desktop_okusuri.png" class="medimage">
 						<span class="medicontext">Medication</span>
-					</div>
-					<button class="internet" onclick="document.querySelector('.internettab').style.display = 'block';">
+          </button>
+					<button class="internet desktopicon" onclick="document.querySelector('.internettab').style.display = 'block';">
 						<div class="interneticon">
 							<img src="images\desktop_icons\icon_desktop_internet.png" class="internetimage">
 							<span class="interneticontext">Internet</span>
@@ -111,6 +112,140 @@
 					</div>
 				</div>
 			</div>
+      <div class="medtab"> 
+      <div class="depaztab windowbox draggable" id="draggableBox" style="display:none">
+				<div class="header">
+					<div class="purple-box"></div>
+					<span class="windowtitle">Depaz Pills (1mg)</span>
+					<button class="closewindow" onclick="closeSound.play(); document.querySelector('.depaztab').style.display = 'none';" style="cursor:pointer">
+					<img src="images\buttons\button_close_0.png" />
+					</button>
+				</div>
+				<div class="body depazmainbodyforpadding">
+					<div class="warningtext depazbody">
+            <div class="depazimg">
+              <img src="images\medication\icon_window_daypass_none.png" class="depazimg">
+            </div>
+            <div class="depazdesc">
+              <span class="medtitle">Name</span>
+              <span class="medinfo">Depaz Pills (1mg)</span>
+              <span class="medtitle">Effects</span>
+              <span class="medinfo">Calms the user down</span>
+              <span class="medtitle">Side Effects</span>
+              <span class="medinfo">Makes the user kinda floppy</span>
+              <span class="medtitle">Ame's Notes</span>
+              <span class="medinfo">Everything just feels more manageable when I take some. Makes me feel kinda floaty if I take too many though.</span>
+            </div>
+					</div>
+				</div>
+			</div>
+      <div class="dylsemtab windowbox draggable" id="draggableBox" style="display:none">
+				<div class="header">
+					<div class="purple-box"></div>
+					<span class="windowtitle">Dylsem Pills</span>
+					<button class="closewindow" onclick="closeSound.play(); document.querySelector('.dylsemtab').style.display = 'none';" style="cursor:pointer">
+					<img src="images\buttons\button_close_0.png" />
+					</button>
+				</div>
+				<div class="body depazmainbodyforpadding">
+					<div class="warningtext depazbody">
+            <div class="depazimg">
+              <img src="images\medication\bron_base.png" class="depazimg">
+            </div>
+            <div class="depazdesc">
+              <span class="medtitle">Name</span>
+              <span class="medinfo">Dylsem Pills</span>
+              <span class="medtitle">Effects</span>
+              <span class="medinfo">Stops coughs</span>
+              <span class="medtitle">Side Effects</span>
+              <span class="medinfo">Makes you feel all sorts of things</span>
+              <span class="medtitle">Ame's Notes</span>
+              <span class="medinfo">A streamer's voice is their lifeline! But don't take too many or bad shit will happen.</span>
+            </div>
+					</div>
+				</div>
+			</div>
+      <div class="embiantab windowbox draggable" id="draggableBox" style="display:none">
+				<div class="header">
+					<div class="purple-box"></div>
+					<span class="windowtitle">Embian</span>
+					<button class="closewindow" onclick="closeSound.play(); document.querySelector('.embiantab').style.display = 'none';" style="cursor:pointer">
+					<img src="images\buttons\button_close_0.png" />
+					</button>
+				</div>
+				<div class="body depazmainbodyforpadding">
+					<div class="warningtext depazbody">
+            <div class="depazimg">
+              <img src="images\medication\icon_window_hiporon_none.png" class="depazimg">
+            </div>
+            <div class="depazdesc">
+              <span class="medtitle">Name</span>
+              <span class="medinfo">Embian</span>
+              <span class="medtitle">Effects</span>
+              <span class="medinfo">Helps you conk out</span>
+              <span class="medtitle">Side Effects</span>
+              <span class="medinfo">Your brain goes all funny</span>
+              <span class="medtitle">Ame's Notes</span>
+              <span class="medinfo">Good for when I just want to forget everything and sleep. I go bonkers if I take too many.</span>
+            </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="magicgrasstab windowbox draggable" id="draggableBox" style="display:none">
+				<div class="header">
+					<div class="purple-box"></div>
+					<span class="windowtitle">Magic Smoke</span>
+					<button class="closewindow" onclick="closeSound.play(); document.querySelector('.magicgrasstab').style.display = 'none';" style="cursor:pointer">
+					<img src="images\buttons\button_close_0.png" />
+					</button>
+				</div>
+				<div class="body depazmainbodyforpadding">
+					<div class="warningtext depazbody">
+            <div class="depazimg">
+              <img src="images\medication\icon_window_happa.png" class="depazimg">
+            </div>
+            <div class="depazdesc">
+              <span class="medtitle">Name</span>
+              <span class="medinfo">Magic Smoke</span>
+              <span class="medtitle">Effects</span>
+              <span class="medinfo">Makes you feel super relaxed</span>
+              <span class="medtitle">Side Effects</span>
+              <span class="medinfo">Fun :)</span>
+              <span class="medtitle">Ame's Notes</span>
+              <span class="medinfo">For when I want to bury everything that hurts me and makes me sad deep down.</span>
+            </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="magicpapertab windowbox draggable" id="draggableBox" style="display:none">
+				<div class="header">
+					<div class="purple-box"></div>
+					<span class="windowtitle">Magic Paper</span>
+					<button class="closewindow" onclick="closeSound.play(); document.querySelector('.magicpapertab').style.display = 'none';" style="cursor:pointer">
+					<img src="images\buttons\button_close_0.png" />
+					</button>
+				</div>
+				<div class="body depazmainbodyforpadding">
+					<div class="warningtext depazbody">
+            <div class="depazimg">
+              <img src="images\medication\icon_window_psyche.png" class="depazimg">
+            </div>
+            <div class="depazdesc">
+              <span class="medtitle">Name</span>
+              <span class="medinfo">Magic Paper</span>
+              <span class="medtitle">Effects</span>
+              <span class="medinfo">Makes you see a bunch of things</span>
+              <span class="medtitle">Side Effects</span>
+              <span class="medinfo">Something weird will happen</span>
+              <span class="medtitle">Ame's Notes</span>
+              <span class="medinfo">Apparentally this turns your world all rainbow and stuff. Let's go and look for our own rainbow together...</span>
+            </div>
+					</div>
+				</div>
+			</div>
+    </div>
 		</div>
 		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/lib.min.js"></script>
