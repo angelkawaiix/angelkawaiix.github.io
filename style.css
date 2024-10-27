@@ -1,0 +1,239 @@
+:root {
+  --winbody: #fff8ff;
+  --winhead: #f0d0f1;
+  --purple: #4d22cd;
+  --red: #e75353;
+  --cyan: #90f4e3;
+  --button: #f7e1fa;
+}
+
+@font-face {
+  font-family: "Zpix";
+  src: url("https://raw.githubusercontent.com/angelkawaiix/NSO-web-theme/main/resources/zpix.woff2");
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+body {
+  background-image: url(images/FHDbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f9e2fe;
+  font-family: 'Zpix', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* styles for .left-sidebar and .right-sidebar */
+.left-sidebar, .right-sidebar {
+  width: 12%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+}
+
+.left-sidebar {
+  left: 0;
+}
+
+.right-sidebar {
+  right: 0;
+}
+
+/* styles for .desktop */
+.desktop {
+  width: 76%;
+  height: 100%;
+  padding: 0;
+  background-color: transparent;
+}
+
+.warningbox {
+  pointer-events: auto;
+}
+
+.warningbox, .windowbox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-color: #4d21cb;
+  border-style: solid;
+  border-width: 7px;
+  outline-color: #90f3e1;
+  outline-offset: -5px;
+  outline-style: solid;
+  background-color: var(--winbody);
+  padding: 0;
+width:auto;
+  font-family: 'Zpix', sans-serif;
+}
+
+.warningbox{
+  width: 40vw;
+  z-index: 9999;
+}
+
+
+.button {
+  border-bottom: 2px solid rgba(77, 34, 203, 0.7); /* Bottom border */
+  border-right: 2px solid rgba(77, 34, 203, 0.7); /* Right border */
+  border-top: none;
+  border-left: none;
+  width: 100px;
+  font-family: 'Zpix'; 
+}
+
+span.notice {
+  margin-top: 20px;
+}
+
+.header {
+  background-color: var(--winhead);
+  display: flex;
+  align-items: center;
+  border-bottom: 7px solid #4d21cb;
+}
+
+.purple-box {
+    background-color: var(--purple);
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
+
+span.warning{
+  color:var(--red);
+}
+
+.caution {
+  display: flex;
+  flex-direction: row;
+}
+
+
+.warningtext {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.body {
+  padding: 30px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.warningbox {
+  pointer-events: auto;
+  /* Add any other existing styles for warningbox */
+}
+
+.image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.message, .notice {
+    color: var(--purple);
+    margin-top: 5px;
+    line-height: 25px;
+    font-size:20px;
+}
+
+.message {
+  color: var(--purple);
+  margin-top: 5px; /* Add spacing between warning and message */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.header span {
+  color: var(--purple); /* Change 'Caution' text color */
+  font-size:2.1vh
+}
+
+.button {
+  background-color: var(--button);
+  padding: 10px 15px;
+  border-radius: 0px; /* Square corners */
+  cursor: pointer;
+  margin-right: 10px;
+  color: var(--purple); /* Button text color */
+  font-size:1.8vh;
+  width: 10vw;
+}
+
+.appicons {
+  display: flex;
+  width: 10vh;
+  margin: 5vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+.streamicon, .hangicon,.sleepicon,.medicon,.interneticon,.outicon{
+  margin:1vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+img.streamimage, img.hangimage, img.sleepimage,img.internetimage,img.outimage,img.medimage{
+  width: 6vh;
+}
+
+span.streamicontext,span.hangicontext,span.interneticontext,span.outicontext, span.sleepicontext,.medicontext {
+  color: var(--purple);
+  margin-top: 1vh;
+  font-size: 1.8vh;
+  text-align: center;
+  font-family: 'Zpix'
+}
+
+.aboutme {
+  user-select: none; /* Prevent text selection */
+  position: absolute;
+  top: 30%;
+  left: 60%;
+  width: 600px; /* Add a fixed width */
+}
+
+button.internet {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.internettab{
+  background-image: url('images/internet_base.png') !important;
+  width:500px;
+  top: 50%;
+  left: 40%;
+}
+
+button.closewindow {
+  background: transparent;
+  border: none;
+  display: flex;
+  margin-left: auto;
+}
