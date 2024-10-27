@@ -18,6 +18,36 @@ html {
 }
 
 
+/*mobile fixing*/
+@media only screen and (max-width: 800px) {
+  .warningbox {
+    width: 90% !important;
+    top: 50% !important;
+    left: 50% !important;
+  }
+
+  .aboutme{
+    width:90% !important;
+    left: 50% !important;
+  }
+
+  .internettab{
+    width:90% !important;
+    left: 50% !important;
+  }
+
+  .internettitle{
+    flex-direction: column !important;
+  }
+.internetbody {
+  width: 100% !important;
+  align-items: center !important;
+}
+.button{
+  width: 50% !important;
+}
+}
+
 
 body {
   background-image: url(images/FHDbg.png);
@@ -57,6 +87,8 @@ body {
   padding: 0;
   background-color: transparent;
 }
+
+
 
 .warningbox {
   pointer-events: auto;
@@ -127,6 +159,10 @@ span.warning{
     align-items: flex-start;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+.caution{
+  flex-direction: row !important;
 }
 
 .body {
