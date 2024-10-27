@@ -31,6 +31,11 @@ html {
     left: 50% !important;
   }
 
+  .message{
+    font-size:2vh !important;
+    line-height:2vh !important;
+  }
+
   .internettab{
     width:90% !important;
     left: 50% !important;
