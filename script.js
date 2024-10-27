@@ -85,3 +85,38 @@ document.querySelector('.closewindow').addEventListener('click', function() {
   closeSound.play();
 });
 
+
+const sparklesContainer = document.querySelector('.sparkles-container');
+const sparklesImages = [];
+
+// Load all images from the sparkles folder
+for (let i = 1; i <= 9; i++) {
+  sparklesImages.push(`images/sparkles/internet_sparkle_00${i}.png`);
+}
+
+// Set up the animation
+let currentImageIndex = 0;
+function animateSparkles() {
+  const currentImage = sparklesImages[currentImageIndex];
+  sparklesContainer.querySelector('.sparkles').src = currentImage;
+  currentImageIndex = (currentImageIndex + 1) % sparklesImages.length;
+}
+setInterval(animateSparkles, 100); // adjust the interval to control the animation speed
+
+
+const sparklesContainer2 = document.querySelector('.sparkles-container2');
+const sparklesImages2 = [];
+
+// Load all images from the sparkles folder
+for (let i = 1; i <= 9; i++) {
+  sparklesImages2.push(`images/sparkles/internet_sparkle_00${i}.png`);
+}
+
+// Set up the animation
+let currentImageIndex2 = 0;
+function animateSparkles2() {
+  const currentImage2 = sparklesImages2[currentImageIndex2];
+  sparklesContainer2.querySelector('.sparkles2').src = currentImage2;
+  currentImageIndex2 = (currentImageIndex2 + 1) % sparklesImages2.length;
+}
+setInterval(animateSparkles2, 100); // adjust the interval to control the animation speed

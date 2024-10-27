@@ -1,97 +1,101 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Windose</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
-  <div class="left-sidebar"></div>
-  <div class="right-sidebar"></div>
-    
-  <div class="desktop">
-    <div class="warningbox-container">
-      <div class="warningbox">
-    <div class="header">
-      <div class="purple-box"></div>
-      <span>Caution</span>
-    </div>
-    <div class="body caution">
-      <img src="images/icon_game.png" class="image">
-      <div class="warningtext">
-      <span class="warning">! WARNING !</span>
-      <span class="message">Do NOT try any of the more extreme or depressing actions. Many things on this account are violent or emotionally painful. Please take a break if it messes with you mentally! Before you begin playing, please bear in mind that at the end of the day, the game this account is inspired off of is a work of fiction, but the person behind it is not. This is real. You read this warning properly, right? Promise?</span>
-        <span class="notice">PS. This website is best viewed on desktop.</span>
-      </div>
-    </div>
-    <div class="buttons">
-      <button class="button" onclick="window.close()">Cancel</button>
-      <button class="button" onclick="document.querySelector('.warningbox').remove()">OK</button>
-      
-    </div>
-  
-    </div>
-    <div class="appicons">
-      <div class="streamicon">
-        <img src="images\desktop_icons\icon_desktop_youtube_0.png" class="streamimage">
-        <span class="streamicontext">Stream</span>
-      </div>
-      <div class="hangicon">
-        <img src="images\desktop_icons\icon_desktop_asobu.png" class="hangimage">
-        <span class="hangicontext">Hang Out</span>
-      </div>
-      <div class="sleepicon">
-        <img src="images\desktop_icons\icon_desktop_neru.png" class="sleepimage">
-        <span class="sleepicontext">Sleep</span>
-      </div>
-      <div class="medicon">
-        <img src="images\desktop_icons\icon_desktop_okusuri.png" class="medimage">
-        <span class="medicontext">Medication</span>
-      </div>
-      <button class="internet" onclick="document.querySelector('.internettab').style.display = 'block';">
-      <div class="interneticon">
-        <img src="images\desktop_icons\icon_desktop_internet.png" class="internetimage">
-        <span class="interneticontext">Internet</span>
-      </div>
-    </button>
-      <div class="outicon">
-        <img src="images\desktop_icons\icon_desktop_odekake.png" class="outimage">
-        <span class="outicontext">Go Out</span>
-      </div>
-    </div>
-    
-  <div class="aboutme windowbox draggable" id="draggableBox">
-      <div class="header">
-        <div class="purple-box"></div>
-        <span class="windowtitle">Note</span>
-        <button class="closewindow" onclick="document.querySelector('.aboutme').remove()" style="cursor:pointer">
-          <img src="images\buttons\button_close_0.png" />
-        </button>
-      </div>
-      <div class="body">
-        <span class="message">I never expected any of this to happen. I didnt ask for this.</span>
-        <span class="message">All my links are under internet. Feel free to look around though.</span>
-        </div>
-      </div>
-</div>
-
-<div class="internettab windowbox draggable" id="draggableBox" style="display:none">
-  <div class="header">
-    <div class="purple-box"></div>
-    <span class="windowtitle">Internet</span>
-    <button class="closewindow" onclick="closeSound.play(); document.querySelector('.internettab').style.display = 'none';" style="cursor:pointer">
-      <img src="images\buttons\button_close_0.png" />
-    </button>
-  </div>
-  <div class="body">
-    <div class="warningtext">
-    <span class="message">wait wdym i need to do MORE coding to write this</span>
-    </div>
-  </div>
-</div>
-</div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/lib.min.js"></script>
-  <script src="script.js"></script>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Windose</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+	</head>
+	<body>
+		<div class="left-sidebar"></div>
+		<div class="right-sidebar"></div>
+		<div class="desktop">
+			<div class="warningbox-container">
+				<div class="warningbox">
+					<div class="header">
+						<div class="purple-box"></div>
+						<span>Caution</span>
+					</div>
+					<div class="body caution">
+						<img src="images/icon_game.png" class="image">
+						<div class="warningtext">
+							<span class="warning">! WARNING !</span>
+							<span class="message">Do NOT try any of the more extreme or depressing actions. Many things on this account are violent or emotionally painful. Please take a break if it messes with you mentally! Before you begin playing, please bear in mind that at the end of the day, the game this account is inspired off of is a work of fiction, but the person behind it is not. This is real. You read this warning properly, right? Promise?</span>
+							<span class="notice">PS. This website is best viewed on desktop.</span>
+						</div>
+					</div>
+					<div class="buttons">
+						<button class="button" onclick="window.close()">Cancel</button>
+						<button class="button" onclick="document.querySelector('.warningbox').remove()">OK</button>
+					</div>
+				</div>
+				<div class="appicons">
+					<div class="streamicon">
+						<img src="images\desktop_icons\icon_desktop_youtube_0.png" class="streamimage">
+						<span class="streamicontext">Stream</span>
+					</div>
+					<div class="hangicon">
+						<img src="images\desktop_icons\icon_desktop_asobu.png" class="hangimage">
+						<span class="hangicontext">Hang Out</span>
+					</div>
+					<div class="sleepicon">
+						<img src="images\desktop_icons\icon_desktop_neru.png" class="sleepimage">
+						<span class="sleepicontext">Sleep</span>
+					</div>
+					<div class="medicon">
+						<img src="images\desktop_icons\icon_desktop_okusuri.png" class="medimage">
+						<span class="medicontext">Medication</span>
+					</div>
+					<button class="internet" onclick="document.querySelector('.internettab').style.display = 'block';">
+						<div class="interneticon">
+							<img src="images\desktop_icons\icon_desktop_internet.png" class="internetimage">
+							<span class="interneticontext">Internet</span>
+						</div>
+					</button>
+					<div class="outicon">
+						<img src="images\desktop_icons\icon_desktop_odekake.png" class="outimage">
+						<span class="outicontext">Go Out</span>
+					</div>
+				</div>
+				<div class="aboutme windowbox draggable" id="draggableBox">
+					<div class="header">
+						<div class="purple-box"></div>
+						<span class="windowtitle">Note</span>
+						<button class="closewindow" onclick="document.querySelector('.aboutme').remove()" style="cursor:pointer">
+						<img src="images\buttons\button_close_0.png" />
+						</button>
+					</div>
+					<div class="body">
+						<span class="message">I never expected any of this to happen. I didnt ask for this.</span>
+						<span class="message">All my links are under internet. Feel free to look around though.</span>
+					</div>
+				</div>
+			</div>
+			<div class="internettab windowbox draggable" id="draggableBox" style="display:none">
+				<div class="header">
+					<div class="purple-box"></div>
+					<span class="windowtitle">Internet</span>
+					<button class="closewindow" onclick="closeSound.play(); document.querySelector('.internettab').style.display = 'none';" style="cursor:pointer">
+					<img src="images\buttons\button_close_0.png" />
+					</button>
+				</div>
+				<div class="body">
+					<div class="warningtext">
+						<div class="internettitle">
+							<div class="sparkles-container">
+								<img src="images/sparkles/1.png" class="sparkles" alt="Sparkles">
+							</div>
+              <img src="images\icon_desktop_yapoo.png" class="internettitle">
+              <div class="sparkles-container2">
+								<img src="images/sparkles/2.png" class="sparkles2" alt="Sparkles2">
+							</div>
+						</div>
+          </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/lib.min.js"></script>
+		<script src="script.js"></script>
+	</body>
 </html>
