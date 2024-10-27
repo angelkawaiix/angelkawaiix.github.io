@@ -55,7 +55,7 @@ html {
 		width: 50% !important;
 	}
 
-  .depaztab, .dylsemtab, .embiantab, .magicgrasstab, .magicpapertab {
+  .depaztab, .dylsemtab, .embiantab, .magicgrasstab, .magicpapertab,.magicpowdertab {
     width: 50% !important;
     height: 20% !important;
 }
@@ -464,7 +464,7 @@ a.internetredirect {
 	/* Make sure the image is on top of the line */
 }
 
-.depaztab, .dylsemtab, .embiantab, .magicgrasstab, .magicpapertab {
+.depaztab, .dylsemtab, .embiantab, .magicgrasstab, .magicpapertab, .magicpowdertab {
   width: 700px;
 }
 
@@ -514,4 +514,9 @@ span.medtitle {
 .magicpapertab{
   left: 65%;
   top:65%;
+}
+
+.magicpowdertab{
+  left: 40%;
+  top:30%;
 }

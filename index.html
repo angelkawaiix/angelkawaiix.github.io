@@ -44,7 +44,7 @@
 						<img src="images\desktop_icons\icon_desktop_neru.png" class="sleepimage">
 						<span class="sleepicontext">Sleep</span>
 					</div>
-          <button class="medicon desktopicon" onclick="Array.from(document.querySelectorAll('.depaztab, .dylsemtab, .embiantab, .magicgrasstab, .magicpapertab')).forEach(tab => tab.style.display = 'block');">						
+          <button class="medicon desktopicon" onclick="Array.from(document.querySelectorAll('.depaztab, .dylsemtab, .embiantab, .magicgrasstab, .magicpapertab, .magicpowdertab')).forEach(tab => tab.style.display = 'block');">			
             <img src="images\desktop_icons\icon_desktop_okusuri.png" class="medimage">
 						<span class="medicontext">Medication</span>
           </button>
@@ -241,6 +241,33 @@
               <span class="medinfo">Something weird will happen</span>
               <span class="medtitle">Ame's Notes</span>
               <span class="medinfo">Apparentally this turns your world all rainbow and stuff. Let's go and look for our own rainbow together...</span>
+            </div>
+					</div>
+				</div>
+			</div>
+
+      <div class="magicpowdertab windowbox draggable" id="draggableBox" style="display:none">
+				<div class="header">
+					<div class="purple-box"></div>
+					<span class="windowtitle">Magic Powder</span>
+					<button class="closewindow" onclick="closeSound.play(); document.querySelector('.magicpowdertab').style.display = 'none';" style="cursor:pointer">
+					<img src="images\buttons\button_close_0.png" />
+					</button>
+				</div>
+				<div class="body depazmainbodyforpadding">
+					<div class="warningtext depazbody">
+            <div class="depazimg">
+              <img src="images\medication\certa(small).png" class="depazimg">
+            </div>
+            <div class="depazdesc">
+              <span class="medtitle">Name</span>
+              <span class="medinfo">Magic Powder</span>
+              <span class="medtitle">Effects</span>
+              <span class="medinfo">Helps the user focus</span>
+              <span class="medtitle">Side Effects</span>
+              <span class="medinfo">Your brain will go too fast</span>
+              <span class="medtitle">Ame's Notes</span>
+              <span class="medinfo">This isn't meant to be crushed.</span>
             </div>
 					</div>
 				</div>
