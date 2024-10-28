@@ -44,11 +44,27 @@
 					<img src="images\desktop_icons\icon_desktop_neru.png" class="sleepimage">
 					<span class="sleepicontext">Sleep</span>
 				</div>
-				<button class="medicon desktopicon" onclick="Array.from(document.querySelectorAll('.depaztab, .dylsemtab, .embiantab, .magicgrasstab, .magicpapertab, .magicpowdertab')).forEach(tab => tab.style.display = 'block');">			
-				<img src="images\desktop_icons\icon_desktop_okusuri.png" class="medimage">
-				<span class="medicontext">Medication</span>
+				<button class="medicon desktopicon" onclick="showMedTabAndRemoveBadge()">
+					<script>
+						function showMedTabAndRemoveBadge() {
+							Array.from(document.querySelectorAll('.depaztab, .dylsemtab, .embiantab, .magicgrasstab, .magicpapertab, .magicpowdertab')).forEach(tab => tab.style.display = 'block');
+							document.querySelector('.medbadge').remove();
+						}
+					</script>			
+					<img src="images/Badge.png" class="badge-icon medbadge" style="position: absolute; ">
+					<div>
+					<img src="images\desktop_icons\icon_desktop_okusuri.png" class="medimage">
+					
+				<span class="medicontext">Medication</span></div>
 				</button>
-				<button class="internet desktopicon" onclick="document.querySelector('.internettab').style.display = 'block';">
+				<button class="internet desktopicon" onclick="showInternetTabAndRemoveBadge()">
+					<script>
+					function showInternetTabAndRemoveBadge() {
+					  document.querySelector('.internettab').style.display = 'block';
+					  document.querySelector('.internetbadge').remove();
+					}
+					</script>
+					<img src="images/Badge.png" class="badge-icon internetbadge" style="position: absolute; ">
 					<div class="interneticon">
 						<img src="images\desktop_icons\icon_desktop_internet.png" class="internetimage">
 						<span class="interneticontext">Internet</span>

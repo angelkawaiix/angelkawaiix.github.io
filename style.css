@@ -525,3 +525,17 @@ span.medtitle {
     padding: 0px;
 }
 
+.badge-icon {
+    width: 25px;
+    height: 25px;
+    margin-top: 0px;
+    left: 18%;
+}
+
+.badge-icon {
+	z-index: 0;
+  }
+  
+  .appicons {
+	z-index: -1;
+  }

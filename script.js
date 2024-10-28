@@ -166,3 +166,7 @@ windowboxes.forEach(windowbox => {
     bringToFront(windowbox);
   });
 });
+
+document.querySelector('.internet').addEventListener('click', function() {
+	document.querySelector('.badge-icon-internet').remove();
+  });
