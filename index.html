@@ -32,9 +32,18 @@
 				</div>
 			</div>
 			<div class="appicons">
-				<button class="streamicon desktopicon" onclick="document.querySelector('.streamtab').style.display = 'block';">
+				<button class="streamicon desktopicon" onclick="showStreamTabAndRemoveBadge()">
+					<script>
+						function showStreamTabAndRemoveBadge() {
+						  document.querySelector('.streamtab').style.display = 'block';
+						  document.querySelector('.streambadge').remove();
+						}
+						</script>
+						<img src="images/Badge.png" class="badge-icon streambadge" style="position: absolute; ">
+						<div>
 					<img src="images\desktop_icons\icon_desktop_youtube_0.png" class="streamimage">
 					<span class="streamicontext">Stream</span>
+				</div>
 				</button>
 				<div class="hangicon">
 					<img src="images\desktop_icons\icon_desktop_asobu.png" class="hangimage">
