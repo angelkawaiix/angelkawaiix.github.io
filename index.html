@@ -30,90 +30,89 @@
 						<button class="button" onclick="document.querySelector('.warningbox').remove()">OK</button>
 					</div>
 				</div>
-      </div>
-				<div class="appicons">
-					<div class="streamicon">
-						<img src="images\desktop_icons\icon_desktop_youtube_0.png" class="streamimage">
-						<span class="streamicontext">Stream</span>
-					</div>
-					<div class="hangicon">
-						<img src="images\desktop_icons\icon_desktop_asobu.png" class="hangimage">
-						<span class="hangicontext">Hang Out</span>
-					</div>
-					<div class="sleepicon">
-						<img src="images\desktop_icons\icon_desktop_neru.png" class="sleepimage">
-						<span class="sleepicontext">Sleep</span>
-					</div>
-          <button class="medicon desktopicon" onclick="Array.from(document.querySelectorAll('.depaztab, .dylsemtab, .embiantab, .magicgrasstab, .magicpapertab, .magicpowdertab')).forEach(tab => tab.style.display = 'block');">			
-            <img src="images\desktop_icons\icon_desktop_okusuri.png" class="medimage">
-						<span class="medicontext">Medication</span>
-          </button>
-					<button class="internet desktopicon" onclick="document.querySelector('.internettab').style.display = 'block';">
-						<div class="interneticon">
-							<img src="images\desktop_icons\icon_desktop_internet.png" class="internetimage">
-							<span class="interneticontext">Internet</span>
-						</div>
-					</button>
-					<div class="outicon">
-						<img src="images\desktop_icons\icon_desktop_odekake.png" class="outimage">
-						<span class="outicontext">Go Out</span>
-					</div>
+			</div>
+			<div class="appicons">
+				<button class="streamicon desktopicon" onclick="document.querySelector('.streamtab').style.display = 'block';">
+					<img src="images\desktop_icons\icon_desktop_youtube_0.png" class="streamimage">
+					<span class="streamicontext">Stream</span>
+				</button>
+				<div class="hangicon">
+					<img src="images\desktop_icons\icon_desktop_asobu.png" class="hangimage">
+					<span class="hangicontext">Hang Out</span>
 				</div>
-				<div class="aboutme windowbox draggable" id="draggableBox">
-					<div class="header">
-						<div class="purple-box"></div>
-						<span class="windowtitle">Note</span>
-						<button class="closewindow" onclick="document.querySelector('.aboutme').remove()" style="cursor:pointer">
-						<img src="images\buttons\button_close_0.png" />
-						</button>
+				<div class="sleepicon">
+					<img src="images\desktop_icons\icon_desktop_neru.png" class="sleepimage">
+					<span class="sleepicontext">Sleep</span>
+				</div>
+				<button class="medicon desktopicon" onclick="Array.from(document.querySelectorAll('.depaztab, .dylsemtab, .embiantab, .magicgrasstab, .magicpapertab, .magicpowdertab')).forEach(tab => tab.style.display = 'block');">			
+				<img src="images\desktop_icons\icon_desktop_okusuri.png" class="medimage">
+				<span class="medicontext">Medication</span>
+				</button>
+				<button class="internet desktopicon" onclick="document.querySelector('.internettab').style.display = 'block';">
+					<div class="interneticon">
+						<img src="images\desktop_icons\icon_desktop_internet.png" class="internetimage">
+						<span class="interneticontext">Internet</span>
 					</div>
-					<div class="body">
-						<span class="message">I never expected any of this to happen. I didnt ask for this.</span>
-						<span class="message">All my links are under internet. Feel free to look around though.</span>
-					</div>
+				</button>
+				<div class="outicon">
+					<img src="images\desktop_icons\icon_desktop_odekake.png" class="outimage">
+					<span class="outicontext">Go Out</span>
 				</div>
 			</div>
-			<div class="internettab windowbox draggable" id="draggableBox" style="display:none">
+			<div class="aboutme windowbox draggable" id="draggableBox">
 				<div class="header">
 					<div class="purple-box"></div>
-					<span class="windowtitle">Internet</span>
-					<button class="closewindow" onclick="closeSound.play(); document.querySelector('.internettab').style.display = 'none';" style="cursor:pointer">
+					<span class="windowtitle">Note</span>
+					<button class="closewindow" onclick="document.querySelector('.aboutme').remove()" style="cursor:pointer">
 					<img src="images\buttons\button_close_0.png" />
 					</button>
 				</div>
 				<div class="body">
-					<div class="warningtext internetbody">
-						<div class="internettitle">
-							<div class="sparkles-container">
-								<img src="images/sparkles/1.png" class="sparkles" alt="Sparkles">
-							</div>
-							<img src="images\icon_desktop_yapoo.png" class="internettitle internettitletext">
-							<div class="sparkles-container2">
-								<img src="images/sparkles/2.png" class="sparkles2" alt="Sparkles2">
-							</div>
+					<span class="message">I never expected any of this to happen. I didnt ask for this.</span>
+					<span class="message">All my links are under internet. Feel free to look around though.</span>
+				</div>
+			</div>
+		<div class="internettab windowbox draggable" id="draggableBox" style="display:none">
+			<div class="header">
+				<div class="purple-box"></div>
+				<span class="windowtitle">Internet</span>
+				<button class="closewindow" onclick="closeSound.play(); document.querySelector('.internettab').style.display = 'none';" style="cursor:pointer">
+				<img src="images\buttons\button_close_0.png" />
+				</button>
+			</div>
+			<div class="body">
+				<div class="warningtext internetbody">
+					<div class="internettitle">
+						<div class="sparkles-container">
+							<img src="images/sparkles/1.png" class="sparkles" alt="Sparkles">
 						</div>
-						<div class="internetlinks">
-							<div class="internetlinkssections">
-								<img src="images\icon_cho.png" class="internetimg">
-								<a href="https://www.instagram.com/_xangelkawaiix_/" target="_blank" class="internetredirect">@_xangelkawaiix_</a>
-								<hr class="internetline" >
-							</div>
-							<div class="internetlinkssections2">
-								<img src="images\icon_ame.png" class="internetimg2">
-								<a href="https://www.instagram.com/raincandy_ux/" target="_blank" class="internetredirect">@raincandy_ux</a>
-								<hr class="internetline">
-							</div>
-							<div class="internetlinkssections">
-								<img src="images\desktop_icons\discord.png" class="internetimg">
-								<a href="https://discord.gg/92HfEwpgk9" target="_blank" class="internetredirect">Discord server</a>
-								<hr class="internetline">
-							</div>
+						<img src="images\icon_desktop_yapoo.png" class="internettitle internettitletext">
+						<div class="sparkles-container2">
+							<img src="images/sparkles/2.png" class="sparkles2" alt="Sparkles2">
+						</div>
+					</div>
+					<div class="internetlinks">
+						<div class="internetlinkssections">
+							<img src="images\icon_cho.png" class="internetimg">
+							<a href="https://www.instagram.com/_xangelkawaiix_/" target="_blank" class="internetredirect">@_xangelkawaiix_</a>
+							<hr class="internetline" >
+						</div>
+						<div class="internetlinkssections2">
+							<img src="images\icon_ame.png" class="internetimg2">
+							<a href="https://www.instagram.com/raincandy_ux/" target="_blank" class="internetredirect">@raincandy_ux</a>
+							<hr class="internetline">
+						</div>
+						<div class="internetlinkssections">
+							<img src="images\desktop_icons\discord.png" class="internetimg">
+							<a href="https://discord.gg/92HfEwpgk9" target="_blank" class="internetredirect">Discord server</a>
+							<hr class="internetline">
 						</div>
 					</div>
 				</div>
 			</div>
-      <div class="medtab"> 
-      <div class="depaztab windowbox draggable" id="draggableBox" style="display:none">
+		</div>
+		<div class="medtab">
+			<div class="depaztab windowbox draggable" id="draggableBox" style="display:none">
 				<div class="header">
 					<div class="purple-box"></div>
 					<span class="windowtitle">Depaz Pills (1mg)</span>
@@ -123,23 +122,23 @@
 				</div>
 				<div class="body depazmainbodyforpadding">
 					<div class="warningtext depazbody">
-            <div class="depazimg">
-              <img src="images\medication\icon_window_daypass_none.png" class="depazimg">
-            </div>
-            <div class="depazdesc">
-              <span class="medtitle">Name</span>
-              <span class="medinfo">Depaz Pills (1mg)</span>
-              <span class="medtitle">Effects</span>
-              <span class="medinfo">Calms the user down</span>
-              <span class="medtitle">Side Effects</span>
-              <span class="medinfo">Makes the user kinda floppy</span>
-              <span class="medtitle">Ame's Notes</span>
-              <span class="medinfo">Everything just feels more manageable when I take some. Makes me feel kinda floaty if I take too many though.</span>
-            </div>
+						<div class="depazimg">
+							<img src="images\medication\icon_window_daypass_none.png" class="depazimg">
+						</div>
+						<div class="depazdesc">
+							<span class="medtitle">Name</span>
+							<span class="medinfo">Depaz Pills (1mg)</span>
+							<span class="medtitle">Effects</span>
+							<span class="medinfo">Calms the user down</span>
+							<span class="medtitle">Side Effects</span>
+							<span class="medinfo">Makes the user kinda floppy</span>
+							<span class="medtitle">Ame's Notes</span>
+							<span class="medinfo">Everything just feels more manageable when I take some. Makes me feel kinda floaty if I take too many though.</span>
+						</div>
 					</div>
 				</div>
 			</div>
-      <div class="dylsemtab windowbox draggable" id="draggableBox" style="display:none">
+			<div class="dylsemtab windowbox draggable" id="draggableBox" style="display:none">
 				<div class="header">
 					<div class="purple-box"></div>
 					<span class="windowtitle">Dylsem Pills</span>
@@ -149,23 +148,23 @@
 				</div>
 				<div class="body depazmainbodyforpadding">
 					<div class="warningtext depazbody">
-            <div class="depazimg">
-              <img src="images\medication\bron_base.png" class="depazimg">
-            </div>
-            <div class="depazdesc">
-              <span class="medtitle">Name</span>
-              <span class="medinfo">Dylsem Pills</span>
-              <span class="medtitle">Effects</span>
-              <span class="medinfo">Stops coughs</span>
-              <span class="medtitle">Side Effects</span>
-              <span class="medinfo">Makes you feel all sorts of things</span>
-              <span class="medtitle">Ame's Notes</span>
-              <span class="medinfo">A streamer's voice is their lifeline! But don't take too many or bad shit will happen.</span>
-            </div>
+						<div class="depazimg">
+							<img src="images\medication\bron_base.png" class="depazimg">
+						</div>
+						<div class="depazdesc">
+							<span class="medtitle">Name</span>
+							<span class="medinfo">Dylsem Pills</span>
+							<span class="medtitle">Effects</span>
+							<span class="medinfo">Stops coughs</span>
+							<span class="medtitle">Side Effects</span>
+							<span class="medinfo">Makes you feel all sorts of things</span>
+							<span class="medtitle">Ame's Notes</span>
+							<span class="medinfo">A streamer's voice is their lifeline! But don't take too many or bad shit will happen.</span>
+						</div>
 					</div>
 				</div>
 			</div>
-      <div class="embiantab windowbox draggable" id="draggableBox" style="display:none">
+			<div class="embiantab windowbox draggable" id="draggableBox" style="display:none">
 				<div class="header">
 					<div class="purple-box"></div>
 					<span class="windowtitle">Embian</span>
@@ -175,24 +174,23 @@
 				</div>
 				<div class="body depazmainbodyforpadding">
 					<div class="warningtext depazbody">
-            <div class="depazimg">
-              <img src="images\medication\icon_window_hiporon_none.png" class="depazimg">
-            </div>
-            <div class="depazdesc">
-              <span class="medtitle">Name</span>
-              <span class="medinfo">Embian</span>
-              <span class="medtitle">Effects</span>
-              <span class="medinfo">Helps you conk out</span>
-              <span class="medtitle">Side Effects</span>
-              <span class="medinfo">Your brain goes all funny</span>
-              <span class="medtitle">Ame's Notes</span>
-              <span class="medinfo">Good for when I just want to forget everything and sleep. I go bonkers if I take too many.</span>
-            </div>
+						<div class="depazimg">
+							<img src="images\medication\icon_window_hiporon_none.png" class="depazimg">
+						</div>
+						<div class="depazdesc">
+							<span class="medtitle">Name</span>
+							<span class="medinfo">Embian</span>
+							<span class="medtitle">Effects</span>
+							<span class="medinfo">Helps you conk out</span>
+							<span class="medtitle">Side Effects</span>
+							<span class="medinfo">Your brain goes all funny</span>
+							<span class="medtitle">Ame's Notes</span>
+							<span class="medinfo">Good for when I just want to forget everything and sleep. I go bonkers if I take too many.</span>
+						</div>
 					</div>
 				</div>
 			</div>
-
-      <div class="magicgrasstab windowbox draggable" id="draggableBox" style="display:none">
+			<div class="magicgrasstab windowbox draggable" id="draggableBox" style="display:none">
 				<div class="header">
 					<div class="purple-box"></div>
 					<span class="windowtitle">Magic Smoke</span>
@@ -202,24 +200,23 @@
 				</div>
 				<div class="body depazmainbodyforpadding">
 					<div class="warningtext depazbody">
-            <div class="depazimg">
-              <img src="images\medication\icon_window_happa.png" class="depazimg">
-            </div>
-            <div class="depazdesc">
-              <span class="medtitle">Name</span>
-              <span class="medinfo">Magic Smoke</span>
-              <span class="medtitle">Effects</span>
-              <span class="medinfo">Makes you feel super relaxed</span>
-              <span class="medtitle">Side Effects</span>
-              <span class="medinfo">Fun :)</span>
-              <span class="medtitle">Ame's Notes</span>
-              <span class="medinfo">For when I want to bury everything that hurts me and makes me sad deep down.</span>
-            </div>
+						<div class="depazimg">
+							<img src="images\medication\icon_window_happa.png" class="depazimg">
+						</div>
+						<div class="depazdesc">
+							<span class="medtitle">Name</span>
+							<span class="medinfo">Magic Smoke</span>
+							<span class="medtitle">Effects</span>
+							<span class="medinfo">Makes you feel super relaxed</span>
+							<span class="medtitle">Side Effects</span>
+							<span class="medinfo">Fun :)</span>
+							<span class="medtitle">Ame's Notes</span>
+							<span class="medinfo">For when I want to bury everything that hurts me and makes me sad deep down.</span>
+						</div>
 					</div>
 				</div>
 			</div>
-
-      <div class="magicpapertab windowbox draggable" id="draggableBox" style="display:none">
+			<div class="magicpapertab windowbox draggable" id="draggableBox" style="display:none">
 				<div class="header">
 					<div class="purple-box"></div>
 					<span class="windowtitle">Magic Paper</span>
@@ -229,24 +226,23 @@
 				</div>
 				<div class="body depazmainbodyforpadding">
 					<div class="warningtext depazbody">
-            <div class="depazimg">
-              <img src="images\medication\icon_window_psyche.png" class="depazimg">
-            </div>
-            <div class="depazdesc">
-              <span class="medtitle">Name</span>
-              <span class="medinfo">Magic Paper</span>
-              <span class="medtitle">Effects</span>
-              <span class="medinfo">Makes you see a bunch of things</span>
-              <span class="medtitle">Side Effects</span>
-              <span class="medinfo">Something weird will happen</span>
-              <span class="medtitle">Ame's Notes</span>
-              <span class="medinfo">Apparentally this turns your world all rainbow and stuff. Let's go and look for our own rainbow together...</span>
-            </div>
+						<div class="depazimg">
+							<img src="images\medication\icon_window_psyche.png" class="depazimg">
+						</div>
+						<div class="depazdesc">
+							<span class="medtitle">Name</span>
+							<span class="medinfo">Magic Paper</span>
+							<span class="medtitle">Effects</span>
+							<span class="medinfo">Makes you see a bunch of things</span>
+							<span class="medtitle">Side Effects</span>
+							<span class="medinfo">Something weird will happen</span>
+							<span class="medtitle">Ame's Notes</span>
+							<span class="medinfo">Apparentally this turns your world all rainbow and stuff. Let's go and look for our own rainbow together...</span>
+						</div>
 					</div>
 				</div>
 			</div>
-
-      <div class="magicpowdertab windowbox draggable" id="draggableBox" style="display:none">
+			<div class="magicpowdertab windowbox draggable" id="draggableBox" style="display:none">
 				<div class="header">
 					<div class="purple-box"></div>
 					<span class="windowtitle">Magic Powder</span>
@@ -256,23 +252,35 @@
 				</div>
 				<div class="body depazmainbodyforpadding">
 					<div class="warningtext depazbody">
-            <div class="depazimg">
-              <img src="images\medication\certa(small).png" class="depazimg">
-            </div>
-            <div class="depazdesc">
-              <span class="medtitle">Name</span>
-              <span class="medinfo">Magic Powder</span>
-              <span class="medtitle">Effects</span>
-              <span class="medinfo">Helps the user focus</span>
-              <span class="medtitle">Side Effects</span>
-              <span class="medinfo">Your brain will go too fast</span>
-              <span class="medtitle">Ame's Notes</span>
-              <span class="medinfo">This isn't meant to be crushed.</span>
-            </div>
+						<div class="depazimg">
+							<img src="images\medication\certa(small).png" class="depazimg">
+						</div>
+						<div class="depazdesc">
+							<span class="medtitle">Name</span>
+							<span class="medinfo">Magic Powder</span>
+							<span class="medtitle">Effects</span>
+							<span class="medinfo">Helps the user focus</span>
+							<span class="medtitle">Side Effects</span>
+							<span class="medinfo">Your brain will go too fast</span>
+							<span class="medtitle">Ame's Notes</span>
+							<span class="medinfo">This isn't meant to be crushed.</span>
+						</div>
 					</div>
 				</div>
 			</div>
-    </div>
+		</div>
+		<div class="streamtab windowbox draggable" id="draggableBox" style="display:none">
+			<div class="header">
+				<div class="purple-box"></div>
+				<span class="windowtitle">No one is here.</span>
+				<button class="closewindow" onclick="closeSound.play(); document.querySelector('.streamtab').style.display = 'none';" style="cursor:pointer">
+				<img src="images\buttons\button_close_0.png" />
+				</button>
+			</div>
+			<div class="body streambody">
+				<img class="streambg" src="images\bg_stream.png">
+			</div>
+		</div>
 		</div>
 		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/lib.min.js"></script>

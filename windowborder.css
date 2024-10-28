@@ -1,0 +1,17 @@
+.warningbox,
+.windowbox {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border-color: #4d21cb;
+	border-style: solid;
+	border-width: 7px;
+	outline-color: #90f3e1;
+	outline-offset: -5px;
+	outline-style: solid;
+	background-color: var(--winbody);
+	padding: 0;
+	width: auto;
+	font-family: 'Zpix', sans-serif;
+}

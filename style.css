@@ -1,3 +1,5 @@
+@import 'windowborder.css';
+
 :root {
 	--winbody: #fff8ff;
 	--winhead: #f0d0f1;
@@ -17,6 +19,18 @@ html {
 	height: 100%;
 	width: 100%;
 }
+
+/*disable mouse*/
+
+img.streambg, .medtitle, .medinfo {
+	pointer-events: none;
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+  }
 
 
 /*mobile fixing*/
@@ -49,6 +63,10 @@ html {
 	.internetbody {
 		width: 100% !important;
 		align-items: center !important;
+	}
+
+	img.streambg{
+		width:80vw!important;
 	}
 
 	.button {
@@ -130,24 +148,6 @@ body {
 
 .warningbox {
 	pointer-events: auto;
-}
-
-.warningbox,
-.windowbox {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	border-color: #4d21cb;
-	border-style: solid;
-	border-width: 7px;
-	outline-color: #90f3e1;
-	outline-offset: -5px;
-	outline-style: solid;
-	background-color: var(--winbody);
-	padding: 0;
-	width: auto;
-	font-family: 'Zpix', sans-serif;
 }
 
 .warningbox {
@@ -520,3 +520,8 @@ span.medtitle {
   left: 40%;
   top:30%;
 }
+
+.streambody {
+    padding: 0px;
+}
+

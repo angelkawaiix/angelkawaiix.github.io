@@ -1,3 +1,5 @@
+
+
 // Get references to the sidebar elements
 const leftSidebar = document.querySelector('.left-sidebar');
 const rightSidebar = document.querySelector('.right-sidebar');
