@@ -170,3 +170,15 @@ windowboxes.forEach(windowbox => {
 document.querySelector('.internet').addEventListener('click', function() {
 	document.querySelector('.badge-icon-internet').remove();
   });
+
+  function playAudio(file) {
+	var audio = new Audio(file);
+	audio.play();
+  }
+
+  const startButton = document.querySelector('.start-button');
+const startMenu = document.querySelector('.start-menu');
+
+startButton.addEventListener('click', () => {
+  startMenu.classList.toggle('show');
+});

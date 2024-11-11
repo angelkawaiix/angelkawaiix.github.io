@@ -11,6 +11,35 @@
 		<div class="left-sidebar"></div>
 		<div class="right-sidebar"></div>
 		<div class="desktop">
+			<footer class="footer">
+			  <span class="start-button">Start</span>
+			  <div class="start-menu">
+				<div class="startbuttons">
+					<span class="startmenutext">New Game</span>
+				</div>
+				<div class="startbuttons">
+					<span class="startmenutext">Load Game</span>
+				</div>
+				<div class="startbuttons mypictures" onclick="openPictures()">
+					<span class="startmenutext">My Pictures</span>
+				</div>
+				<script>
+					function openPictures() {
+					  document.querySelector('.mypicturestab').style.display = 'block';
+					}
+					</script>
+				<div class="startbuttons">
+					<span class="startmenutext">Control Panel</span>
+				</div>
+				<div class="startbuttons">
+					<span class="startmenutext">Restart</span>
+				</div>
+				<div class="startbuttons">
+					<span class="startmenutext">Shut Down</span>
+				</div>
+				
+			  </div>
+			</footer>
 			<div class="warningbox-container">
 				<div class="warningbox">
 					<div class="header">
@@ -49,17 +78,27 @@
 					<img src="images\desktop_icons\icon_desktop_asobu.png" class="hangimage">
 					<span class="hangicontext">Hang Out</span>
 				</div>
-				<div class="sleepicon">
+				<button class="sleepicon desktopicon" onclick="showSleepTabAndRemoveBadge()">
+					<script>
+						function showSleepTabAndRemoveBadge() {
+						  document.querySelector('.sleeptab').style.display = 'block';
+						  document.querySelector('.sleepbadge').remove();
+						}
+						</script>
 					<img src="images\desktop_icons\icon_desktop_neru.png" class="sleepimage">
 					<span class="sleepicontext">Sleep</span>
-				</div>
+				</button>
 				<button class="medicon desktopicon" onclick="showMedTabAndRemoveBadge()">
 					<script>
 						function showMedTabAndRemoveBadge() {
-							Array.from(document.querySelectorAll('.depaztab, .dylsemtab, .embiantab, .magicgrasstab, .magicpapertab, .magicpowdertab')).forEach(tab => tab.style.display = 'block');
-							document.querySelector('.medbadge').remove();
+							const medications = ['depaztab', 'dylsemtab', 'embiantab', 'magicgrasstab', 'magicpapertab', 'magicpowdertab'];
+
+medications.forEach(medications => {
+  document.querySelector(`.${medications}`).style.display = 'block';
+});
+						  document.querySelector('.medbadge').remove();
 						}
-					</script>			
+						</script>	
 					<img src="images/Badge.png" class="badge-icon medbadge" style="position: absolute; ">
 					<div>
 					<img src="images\desktop_icons\icon_desktop_okusuri.png" class="medimage">
@@ -97,7 +136,7 @@
 					<span class="message">All my links are under internet. Feel free to look around though.</span>
 				</div>
 			</div>
-		<div class="internettab windowbox draggable" id="draggableBox" style="display:none">
+			<div class="internettab windowbox draggable" id="draggableBox" style="display:none">
 			<div class="header">
 				<div class="purple-box"></div>
 				<span class="windowtitle">Internet</span>
@@ -135,8 +174,8 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="medtab">
+			</div>
+			<div class="medtab">
 			<div class="depaztab windowbox draggable" id="draggableBox" style="display:none">
 				<div class="header">
 					<div class="purple-box"></div>
@@ -293,8 +332,8 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="streamtab windowbox draggable" id="draggableBox" style="display:none">
+			</div>
+			<div class="streamtab windowbox draggable" id="draggableBox" style="display:none">
 			<div class="header">
 				<div class="purple-box"></div>
 				<span class="windowtitle">No one is here.</span>
@@ -305,7 +344,23 @@
 			<div class="body streambody">
 				<img class="streambg" src="images\bg_stream.png">
 			</div>
-		</div>
+			</div>
+			<div class="mypicturestab windowbox draggable" id="draggableBox" style="display:none">
+				<div class="header">
+					<div class="purple-box"></div>
+					<span class="windowtitle">My Pictures</span>
+					<button class="closewindow" onclick="closeSound.play(); document.querySelector('.mypicturestab').style.display = 'none';" style="cursor:pointer">
+					<img src="images\buttons\button_close_0.png" />
+					</button>
+				</div>
+				<div class="body">
+					<div class="mypictures">
+						<img class="mypic" src="mypics\20241022_153639.png">
+						<img class="mypic" src="mypics\20241022_160224-edit.jpg">
+						<img class="mypic" src="mypics\20241022_160149-edit.jpg">
+					</div>
+				</div>
+			</div>
 		</div>
 		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/lib.min.js"></script>

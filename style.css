@@ -1,5 +1,7 @@
 @import 'windowborder.css';
 
+
+
 :root {
 	--winbody: #fff8ff;
 	--winhead: #f0d0f1;
@@ -22,7 +24,7 @@ html {
 
 /*disable mouse*/
 
-img.streambg, .medtitle, .medinfo {
+img.streambg, .medtitle, .medinfo, .startmenutext, img.mypic  {
 	pointer-events: none;
 	user-drag: none; 
 	user-select: none;
@@ -39,6 +41,13 @@ img.streambg, .medtitle, .medinfo {
 		width: 90% !important;
 		top: 50% !important;
 		left: 50% !important;
+	}
+
+	.badge-icon {
+		width: 25px;
+		height: 25px;
+		margin-top: 0px;
+		left: 20vw !important;
 	}
 
 	.aboutme {
@@ -104,6 +113,93 @@ span.medtitle {
 
 }
 
+.desktop {
+  position: relative; /* add this */
+  /* existing styles */
+  padding:0px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%; /* add this */
+  max-height: 100%; /* add this */
+  width: 100%;
+  height: 50px; /* example height */
+  background-image: url(images/Footer.png);
+}
+  
+.start-button {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    margin-bottom: 9px;
+    margin-left: 7.5px;
+    background-image: url(images/button_start.png);
+    height: 32px;
+    color: var(--purple);
+    width: 136px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+  .startbuttons {
+	cursor:pointer;
+    display: flex;
+    justify-content: center;
+    background-image: url(images/BaseButton.png);
+    background-size: cover;
+    height: 40px;
+    width: 200px;
+    flex-direction: column;
+}
+
+
+.startbuttons:hover {
+	background-image: url(images/button_startmenu_selected.png);
+  }
+
+  .startmenutext {
+	position: absolute;
+	left: 0;
+	right: 0;
+	text-align: center;
+	color: var(--purple)
+  }
+
+.startbuttons:hover .startmenutext {
+    color: #fff !important;
+    position: absolute !important;
+    left: 0 !important;
+    right: 0 !important;
+    text-align: center !important;
+}
+
+  
+  .start-menu {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: none;
+	margin-bottom:50px;
+	margin-left:5px;
+  }
+  .start-menu.show {
+	display: block;
+	animation: slideUp 0.3s ease;
+  }
+  
+  @keyframes slideUp {
+	from {
+	  transform: translateY(100%);
+	}
+	to {
+	  transform: translateY(0);
+	}
+  }
 
 body {
 	background-image: url(images/FHDbg.png);
@@ -115,6 +211,8 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	padding:0px;
+	margin:0px;
 }
 
 /* styles for .left-sidebar and .right-sidebar */
@@ -135,6 +233,8 @@ body {
 
 .right-sidebar {
 	right: 0;
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
 }
 
 /* styles for .desktop */
@@ -529,7 +629,7 @@ span.medtitle {
     width: 25px;
     height: 25px;
     margin-top: 0px;
-    left: 18%;
+    left: 6.5vw;
 }
 
 .badge-icon {
@@ -539,3 +639,59 @@ span.medtitle {
   .appicons {
 	z-index: -1;
   }
+
+  .menu {
+	width: 200px;
+	padding: 10px;
+  }
+  
+  .menu ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .menu li {
+	padding: 10px;
+  }
+  
+  .menu li img {
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+  }
+  
+  .menu li span {
+	font-size: 14px;
+  }
+  
+  .menu li ul {
+	padding-left: 20px;
+  }
+  
+  .menu li ul li {
+	padding-left: 20px;
+  }
+
+.sleepbody{
+	padding:20px;
+  }
+
+  
+.mypicturestab{
+	width: 900px;
+	height: 600px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+  }
+
+  .mypictures{
+	display:flex;
+	top: 50%;
+	left: 50%;
+  }
+
+img.mypic{
+	width:200px;
+	padding: 10px;
+}
