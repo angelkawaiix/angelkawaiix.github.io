@@ -772,7 +772,7 @@ hr.tweeterline {
     margin-bottom: 20px;
 }
 
-div.tweet.reply {
+.reply {
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
