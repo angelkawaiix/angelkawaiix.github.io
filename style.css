@@ -9,7 +9,8 @@
 	--red: #e75353;
 	--cyan: #90f4e3;
 	--button: #f7e1fa;
-  --medtext: #e992c6;
+	--medtext: #e992c6;
+  	--blue: ##527ce7 !important;
 }
 
 @font-face {
@@ -38,6 +39,10 @@ html {
 
 /*mobile fixing*/
 @media only screen and (max-width: 800px) {
+	.tweetertab {
+		width: 70% !important;
+	}
+
 	.warningbox {
 		width: 90% !important;
 		top: 50% !important;
@@ -697,10 +702,72 @@ img.mypic{
 	padding: 10px;
 }
 
-.tweetertab{
-	width: 900px;
+.tweetertab {
+    width: 900px;
+    height: 80%;
+    background-image: url(images/result_bg_tile.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.bodytweeter{
-	background-image: url('images\result_bg_tile.png');
+.bodytweeter {
+    display: flex;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    height: 625px;
+}
+
+.tweeterbox {
+    padding: 40px;
+    width: 90%;
+    height: auto;
+    background: white;
+    border-radius: 10px !important;
+}
+
+
+.tweet {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.tweetertweet {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+span.tweetaccount {
+    font-size: 1.1rem;
+    color: #527ce7;
+    margin-bottom: 0.5rem;
+}
+
+span.tweettext {
+    font-size: 1.1rem;
+    color: var(--purple);
+}
+
+span.tweettime {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.7rem;
+    color: #94979f;
+}
+
+hr.tweeterline {
+    border-style: solid;
+    border-color: #e8e8e8;
+    border-width: 0.5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
