@@ -20,11 +20,12 @@
 html {
 	height: 100%;
 	width: 100%;
+	overflow: hidd
 }
 
 /*disable mouse*/
 
-img.streambg, .medtitle, .medinfo, .startmenutext, img.mypic  {
+.streamicontext, img.depazimg,img.streambg, .medtitle, .medinfo, .startmenutext, img.mypic  {
 	pointer-events: none;
 	user-drag: none; 
 	user-select: none;
@@ -694,4 +695,12 @@ span.medtitle {
 img.mypic{
 	width:200px;
 	padding: 10px;
+}
+
+.tweetertab{
+	width: 900px;
+}
+
+.bodytweeter{
+	background-image: url('images\result_bg_tile.png');
 }

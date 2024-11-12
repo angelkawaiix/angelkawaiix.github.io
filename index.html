@@ -171,6 +171,11 @@ medications.forEach(medications => {
 							<a href="https://discord.gg/92HfEwpgk9" target="_blank" class="internetredirect">Discord server</a>
 							<hr class="internetline">
 						</div>
+						<div class="internetlinkssections2">
+							<img src="images\desktop_icons\icon_desktop_twitter.png" class="internetimg">
+							<a onclick="document.querySelector(`.tweetertab`).style.display = 'block';" class="internetredirect">Tweeter</a>
+							<hr class="internetline">
+						</div>
 					</div>
 				</div>
 			</div>
@@ -359,6 +364,19 @@ medications.forEach(medications => {
 						<img class="mypic" src="mypics\20241022_160224-edit.jpg">
 						<img class="mypic" src="mypics\20241022_160149-edit.jpg">
 					</div>
+				</div>
+			</div>
+			<div class="tweetertab windowbox draggable" id="draggableBox" style="display:none">
+				<div class="header">
+					<div class="purple-box"></div>
+					<span class="windowtitle">Note</span>
+					<button class="closewindow" onclick="closeSound.play(); document.querySelector('.tweetertab').style.display = 'none';" style="cursor:pointer">
+					<img src="images\buttons\button_close_0.png" />
+					</button>
+				</div>
+				<div class="body bodytweeter">
+					<span class="message">I never expected any of this to happen. I didnt ask for this.</span>
+					<span class="message">All my links are under internet. Feel free to look around though.</span>
 				</div>
 			</div>
 		</div>

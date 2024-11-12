@@ -27,6 +27,8 @@ updateSidebarBackground();
 // Update the background image every hour using setInterval
 setInterval(updateSidebarBackground, 3600000); // 3600000 milliseconds = 1 hour
 
+let offsetX, offsetY;
+
 // Select all elements with the class 'draggable'
 const draggableElements = document.querySelectorAll('.draggable');
 
@@ -57,12 +59,14 @@ function mouseMove(e) {
 	draggedElement.style.top = (e.clientY) + 'px';
 }
 
+/*************  ✨ Codeium Command 🌟  *************/
 // Function to handle mouse up event
 function mouseUp() {
 	// Remove mousemove and mouseup event listeners
 	document.removeEventListener('mousemove', mouseMove);
 	document.removeEventListener('mouseup', mouseUp);
 }
+/******  cd652a9a-604b-4b00-9c8b-097373b15242  *******/
 
 // Create an audio element
 var audio = new Audio('sounds/poko.ogg');
