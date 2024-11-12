@@ -773,7 +773,7 @@ hr.tweeterline {
 }
 
 .reply {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
 }
