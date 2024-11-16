@@ -712,13 +712,13 @@ img.mypic{
 
 .bodytweeter {
     display: flex;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     align-content: center;
-    height: 625px;
+    height: -webkit-fill-available;
 }
 
 .tweeterbox {
@@ -727,6 +727,8 @@ img.mypic{
     height: auto;
     background: white;
     border-radius: 10px !important;
+	height: -webkit-fill-available;
+	overflow:auto;
 }
 
 
