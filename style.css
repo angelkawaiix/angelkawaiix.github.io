@@ -18,6 +18,20 @@
 	src: url("https://raw.githubusercontent.com/angelkawaiix/NSO-web-theme/main/resources/zpix.woff2");
 }
 
+*::-webkit-scrollbar {
+    width: 24px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ccecfc;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #eaa0e7;
+    border-radius: 0px;
+    border: 0px none #ffffff;
+  }
+
 html {
 	height: 100%;
 	width: 100%;
@@ -782,6 +796,7 @@ hr.tweeterline {
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
+    margin-bottom: 5px;
 }
 
 .jinetextmsg {
@@ -798,4 +813,12 @@ hr.tweeterline {
 img.jineimg {
     height: 50px;
     width: 50px;
+}
+
+.replytweet {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
 }
