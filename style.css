@@ -863,3 +863,13 @@ img.webcamame {
     top: 27%;
     left: 38%;
 }
+
+.credit {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: flex-end;
+    height: -webkit-fill-available;
+    margin: 5px;
+    color: var(--purple);
+}
