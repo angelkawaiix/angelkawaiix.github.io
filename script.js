@@ -54,7 +54,7 @@ function mouseMove(e) {
 	const draggedElement = document.querySelector('.draggable:hover');
 
 	// Make sure the box is positioned absolutely
-	draggedElement.style.position = 'absolute';
+	draggedElement.style.position = 'fixed';
 	draggedElement.style.left = (e.clientX) + 'px';
 	draggedElement.style.top = (e.clientY) + 'px';
 }

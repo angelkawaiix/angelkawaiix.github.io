@@ -25,7 +25,7 @@ html {
 
 /*disable mouse*/
 
-.streamicontext, img.depazimg,img.streambg, .medtitle, .medinfo, .startmenutext, img.mypic  {
+.jinetextmsg,.jineimg,.jinemsg,.streamicontext, img.depazimg,img.streambg, .medtitle, .medinfo, .startmenutext, img.mypic  {
 	pointer-events: none;
 	user-drag: none; 
 	user-select: none;
@@ -414,13 +414,17 @@ span.sleepicontext,
 }
 
 .aboutme {
+	background-image: url('images/JINEBG.png');
+	background-repeat: no-repeat;
+	background-size: cover;
 	user-select: none;
 	/* Prevent text selection */
 	position: absolute;
-	top: 30%;
-	left: 60%;
-	width: 600px;
+	top: 65%;
+	left: 85%;
+	width: 350px;
 	/* Add a fixed width */
+	height: 450px;
 }
 
 button.desktopicon {
@@ -778,4 +782,20 @@ hr.tweeterline {
     display: flex !important;
     flex-direction: row !important;
     align-items: center !important;
+}
+
+.jinetextmsg {
+    background: #cbe5f9;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+}
+
+.jinemsg {
+    display: flex;
+}
+
+img.jineimg {
+    height: 50px;
+    width: 50px;
 }
