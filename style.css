@@ -39,7 +39,7 @@ html {
 
 /*disable mouse*/
 
-.jinetextmsg,.jineimg,.jinemsg,.streamicontext, img.depazimg,img.streambg, .medtitle, .medinfo, .startmenutext, img.mypic  {
+img.webcamame, .jinetextmsg,.jineimg,.jinemsg,.streamicontext, img.depazimg,img.streambg, .medtitle, .medinfo, .startmenutext, img.mypic  {
 	pointer-events: none;
 	user-drag: none; 
 	user-select: none;
@@ -821,4 +821,45 @@ img.jineimg {
     align-content: center;
     align-items: center;
     justify-content: flex-start;
+}
+
+img.webcamame {
+    display: block;
+    background-image: url(images/bg_stream.png);
+    background-size: contain;
+    width: 500px;
+	height: fit-content;
+	animation: animate-webcam 3s steps(10) infinite;
+}
+
+@keyframes animate-webcam {
+	0% {
+	  content: url(images/kangelame/ame_idle_anxiety_crazy/stream_ame_idle_anxiety_000_2.png);
+	}
+	12.5% {
+		content: url(images/kangelame/ame_idle_anxiety_crazy/stream_ame_idle_anxiety_001_2.png);
+	}
+	25% {
+		content: url(images/kangelame/ame_idle_anxiety_crazy/stream_ame_idle_anxiety_002_2.png);
+	}
+	37.5% {
+		content: url(images/kangelame/ame_idle_anxiety_crazy/stream_ame_idle_anxiety_003_1.png);
+	}
+	50% {
+		content: url(images/kangelame/ame_idle_anxiety_crazy/stream_ame_idle_anxiety_004_1.png);
+	}
+	62.5% {
+		content: url(images/kangelame/ame_idle_anxiety_crazy/stream_ame_idle_anxiety_005_2.png);
+	}
+	75% {
+		content: url(images/kangelame/ame_idle_anxiety_crazy/stream_ame_idle_anxiety_006_1.png);
+	}
+	100% {
+	  content: url(images/kangelame/ame_idle_anxiety_crazy/stream_ame_idle_anxiety_007_1.png);
+	}
+  }
+
+.webcam {
+    top: 27%;
+    left: 38%;
 }
