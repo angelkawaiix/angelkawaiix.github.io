@@ -21,7 +21,6 @@
 html {
 	height: 100%;
 	width: 100%;
-	overflow: hidd
 }
 
 /*disable mouse*/
@@ -219,6 +218,7 @@ body {
 	justify-content: center;
 	padding:0px;
 	margin:0px;
+	overflow: hidden;
 }
 
 /* styles for .left-sidebar and .right-sidebar */
