@@ -64,6 +64,10 @@ img.webcamame, .jinetextmsg,.jineimg,.jinemsg,.streamicontext, img.depazimg,img.
 		width: 150px !important;
 	}
 
+	.footer {
+		display: flex !important;
+	}
+
 	.webcam {
 		top: 20% !important;
 		left: 65% !important;
