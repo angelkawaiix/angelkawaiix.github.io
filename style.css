@@ -56,6 +56,25 @@ img.webcamame, .jinetextmsg,.jineimg,.jinemsg,.streamicontext, img.depazimg,img.
 		width: 70% !important;
 	}
 
+	.aboutme {
+		height: 300px !important;
+	}
+
+	img.webcamame {
+		width: 150px !important;
+	}
+
+	.webcam {
+		top: 20% !important;
+		left: 65% !important;
+	}
+
+	.credit {
+		font-size: 10px !important;
+		width: 50% !important;
+		text-align: right !important;
+	}
+
 	.warningbox {
 		width: 90% !important;
 		top: 50% !important;
